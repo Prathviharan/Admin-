@@ -1,0 +1,57 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+#main_panel
+{
+	display:grid;
+	grid-template-areas:
+	"Top_panel"
+	"banner_sec"
+	"middle_panel"
+	"bottom_panel";
+	 grid-template-columns:1520px;
+	 background-color:black;
+}
+#top_panel
+{
+	grid-area:Top_panel;
+	height:200px;
+	width:1520px;
+}
+#banner_sec
+{
+	grid-area:banner_sec;
+	height:500px;
+	width:1520px;
+}
+#middle_panel
+{
+	width:1520px;
+	height:775px;
+	grid-area:middle_panel;
+	background-color:#9ab1f5;
+}
+#bottom_panel
+{
+	grid-area:bottom_panel;
+	background-color:green;
+	width:1520px;
+	height:190px;
+}
+form
+{
+	border:2px solid black;
+	padding:20px;
+	
+	margin-top:80px;
+	margin-bottom:200px;
+	margin-left:300px;
+	margin-right:300px;
+}
+#h3
+{
+	margin-left:250px;
+	margin-top:80px;
+}

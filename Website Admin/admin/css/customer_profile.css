@@ -1,0 +1,85 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+#main_panel
+{
+	display:grid;
+	grid-template-areas:
+	"Top_panel Top_panel"
+	"left_panel middle_panel"
+	"bottom_panel bottom_panel";
+	 grid-template-columns:250px 700px;
+	 background-color:black;
+}
+#top_panel
+{
+	grid-area:Top_panel;
+	height:200px;
+	width:1520px;
+}
+#left_panel
+{
+	grid-area:left_panel;
+	background-color:#16161d;
+	height:775px;
+	width:250px;
+}
+#middle_panel
+{
+	width:700px;
+	height:775px;
+	grid-area:middle_panel;
+
+}
+#bottom_panel
+{
+	grid-area:bottom_panel;
+	background-color:green;
+	width:1520px;
+	height:190px;
+}
+.prof_nav a 
+{
+  padding-top:20px;
+  padding-left:43px;
+  padding-bottom:20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+.prof_nav a:hover {
+  color: #fc034e;
+}
+#hello
+{
+	padding-left:44px;
+	padding-bottom:40px;
+	padding-top:50px;
+	color:white;
+	font-size:20;
+}
+
+#delete
+{
+	padding:20px;
+	color:white;
+	background-color:#16161d;
+	
+	border:0px;
+	border-radius: 10px;
+	
+	font-size: 20px;
+	text-align:center;
+}
+#delete:active
+{
+	background-color: #293336;
+    transform: translateY(1px);
+}
+#delete:hover
+{
+	color: #fc034e;
+}

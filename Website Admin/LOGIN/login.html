@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="website icon" type="jpg" href="../TERMS AND COND/image/logo.jpg">
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="login.js"></script>
+    </head>
+
+    <body>
+        <div id="main_panel">
+            <!---------------------------------------------------------------->
+                    <div id="top_panel">
+                        <header class="header1">
+            
+                            <img id="logo1" src="images/demo.png" alt="Logo">
+                            <h1 id="site_name">CEYLON SPICES</h1>
+                            <a id="profile_link" href="logout.php"><img id="profile_icon" src="images/profile.png" alt="profile icon"></a>
+                            <button id="log_in_out">Logout</button>
+                
+                            <nav class="menu">
+                                <a id="m" href="#">Home<a/>
+                                <a id="m" href="#">All Products<a/>
+                                <a id="m" href="#">Help<a/>
+                                <a id="m" href="#">Contact Us<a/>
+                                <a id="m" href="#">About us<a/>
+                            </nav>
+                
+                            <div id="search_sec">
+                            <input id="searchbox" type="text" placeholder=" Search...">
+                            <button id="search_b">Search</button>
+                            </div>
+                        </header>
+
+        </div>
+
+    <!--form-->
+    <form method="post" action="login.php">
+        <div class="form">
+            <div class="box">
+                <h1>Log In</h1>
+                
+                    <label class="label-input">User Type</label>
+                    <br>
+                    <select title="usertype" name="usertype" id="user" required class="dropdown">
+                        <option value="" id="Select" disabled selected>Select Position</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Customer">Customer</option>
+                    </select>
+                
+                    <!--employee id-->
+                    <label class="label-input">Email Address</label>
+                    <input type="text" id="email" autocomplete="off" placeholder="Type Employee Email Address" required>
+                
+                    <!--password-->
+                    <label class="label-input">Password</label>
+                    <input type="password" id="password" autocomplete="off" maxlength="8" placeholder="Password"  required>
+            </div> 
+                    <!--show password-->
+                    <input type="checkbox" onclick="myfunction()">Show Password
+            
+                    <!--reset password-->
+                    <p class="reset-password">
+                        <a href="forgot password.php">Forgot Password</a>
+                    </p>
+            
+            <div class="login_btn">
+                <button class="btn" type="submit" name="login">Log In</button>
+                    <p class="signup">Create Employee Account</p>
+                <button class="btn">Register
+                    <a href="../admin/admin reg.html "></a>
+                </button>
+            </div>
+        </div>
+    </form>
+    </body>
+</html>

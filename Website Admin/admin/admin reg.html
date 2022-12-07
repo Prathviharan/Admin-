@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <!--logo show on website-->
+        <link rel="website icon" type="png" href="image/demo.png">
+        <link rel="stylesheet" href="css/headpart.css">
+        <link rel="stylesheet" href="css/admin reg.css">
+    </head>
+
+    <body>
+        <div id="main_panel">
+            <!------------------------------header---------------------------------->
+                    <div id="top_panel">
+                        <header class="header1">
+            
+                            <img id="logo1" src="image/demo.png" alt="Logo">
+                            <h1 id="site_name">CEYLON SPICES</h1>
+                            <a id="profile_link" href="#">
+                                <img id="profile_icon" src="image/profile.png" alt="profile icon"></a>
+                            <button id="log_in_out" href="logout.php">Logout</button>
+                
+                            <div id="search_sec">
+                            <input id="searchbox" type="text" placeholder=" Search...">
+                            <button id="search_b">Search</button>
+                    </div>
+                
+            
+                </header>
+                    
+            
+                    <div id="left_panel">
+                        <h3 id="hello">Employee</h3>
+                        <div class="prof_nav">
+                          <a href="admin reg.html">Add Employee</a>
+                          <a href="admin details.php">Employee Details</a>
+                          <a href="admin edit.php">Edit Employee</a>
+                          <a href="admin delete.php">Delete Employee</a>
+                          <br>
+                          
+                        </div>
+                    </div>
+
+    <section id="form">
+        <form method="post" action="admin reg.php" enctype="multipart/form-data" >
+            <h2>Employee Registration</h2>
+            <br>
+                <!--profile photo-->
+                <div class="container">
+                    <label class="label-input">Employee Profile Picture</label>
+                    <br><br>
+                    <img src="image/emp_profile.png" alt="employee_dp" id="profile_picture">
+                    <input type="file" id="file" alt="profile photo" name="photo" accept=".png,.jpg,.jpeg" onchange="profile(event)" required>
+                    <label class="pro_label" for="file" id="Btn">Add Profile Picture</label>
+                </div>
+                <!--fname-->
+                <p>
+                    <label class="label-input">First Name</label>
+                    <br>
+                    <input type="text" name="fname" placeholder="First-Name" autocomplete="off" required>
+                </p>
+                <!--lname-->
+                <p>
+                    <label class="label-input">Last Name</label>
+                    <br>
+                    <input type="text" name="lname" placeholder="Last-Name" autocomplete="off" required>
+                </p>
+                <!--email-->
+                <p>
+                    <label class="label-input">E-mail Address</label>
+                    <br>
+                    <input type="text" name="email" placeholder="example@xyz.com" autocomplete="off" required>
+                </p>
+                <!--role-->
+                <p>
+                    <label class="label-input">Employee Position</label>
+                    <br>
+                    <select title="Select Employee Position" name="usertype" id="user" required class="dropdown">
+                        <option value="" id="Select" disabled selected>Select Position</option>
+                        <option value="Customer Manegement">Customer Manegement</option>
+                        <option value="Delivery Person">Delivery Person</option>
+                        <option value="Payment Manegement">Payment Manegement</option>
+                        <option value="Product Manegement">Product Manegement</option>
+                        <option value="Employee Manegement">Employee Manegement</option>
+                        <option value="Delivery Person">Delivery Person</option>
+                    </select>
+                </p>
+                <!--password-->
+                <p>
+                    <label class="label-input">Password</label>
+                    <br>
+                    <input type="password" name="password" maxlength="8"  required>
+                </p>
+                <!--confirm password-->
+                <p>
+                    <label class="label-input">Confirm Password</label>
+                    <br>
+                    <input type="password" name="confirm-password" maxlength="8" required>
+                </p>
+                <!--dob-->
+                <p>
+                    <label class="label-input">Date Of Birth</label>
+                    <br>
+                    <input type="date" name="dob" placeholder="" autocomplete="off" required>
+                </p>
+                <!--phone number-->
+                <p>
+                    <label class="label-input">Phone Number</label>
+                    <br>
+                    <input type="number" name="phone-number" placeholder="" autocomplete="off" maxlength="10" required>
+                </p>
+                <!--nic-->
+                <p>
+                    <label class="label-input">NIC</label>
+                    <br>
+                    <input type="number"  name="nic" placeholder="xxxxxxxxxxxxxx v " autocomplete="off" maxlength="12" required>
+                </p>
+                <!--gender-->  
+                <p>  
+                    <label class="label-input">Gender</label>
+                        <label class="container">Male
+                            <input type="radio" name="gender" value="Male">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Female
+                            <input type="radio" name="gender" value="Female">
+                            <span class="checkmark"></span>
+                        </label>
+                </p>
+                <!--address-->
+                <p>
+                    <label class="label-input">Address</label>
+                    <br>
+                    <textarea name="address" placeholder="example-123,Peradeniya Road,Kandy,20000"></textarea>
+                </p>
+                
+                <!--reset-->
+                <input type="reset" class="reset_btn" value="Reset">
+                    
+                <!--submit-->
+                <input type="submit" class="reset_btn" value="Add">
+            </form>
+        </div>
+    </section>
+    </body>
+</html>

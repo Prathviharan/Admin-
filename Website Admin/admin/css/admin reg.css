@@ -1,0 +1,192 @@
+#form{
+    width: calc(100% - 250px);
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    margin: -20px 0 50px;
+    padding-top: 0%;
+}
+/* This is for Profile picture*/
+#profile_picture{
+    height: 130px;
+    width: 130px;
+    position: relative;
+    top: 50px;
+    left: 177px;
+    transform: translate(-50%,-50%); /*Move element thorough X & Y Axis*/
+    border-radius: 50%;
+    overflow: hidden; /*Without the text all other things will hide*/
+    border: 2px solid black;
+
+}
+
+#file{
+    display: none;
+}
+
+#Btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+/*
+.pro_label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}*/
+h2{
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+input  {
+	background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+img{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+select{
+    background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 15px 0;
+	width: 100%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: black;
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+textarea{
+    background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 10px 0;
+	width: 100%;
+}
+.reset_btn{
+    border-radius: 20px;
+	border: 1px solid black;
+	background-color: black;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.link1{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.reset_btn:active {
+	transform: scale(0.95);
+}
+
+.reset_btn:focus {
+	outline: none;
+}
+
+.reset_btn.ghost {
+	background-color: transparent;
+	border-color: #ffffff;
+}
+

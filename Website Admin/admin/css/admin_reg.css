@@ -1,0 +1,227 @@
+ *
+{
+	margin:0;
+	padding:0;
+}
+#main_panel
+{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-template-areas:
+	"Top_panel Top_panel"
+	"left_panel right_panel"
+	"bottom_panel bottom_panel";
+	 grid-template-columns:250px 700px;
+}
+#top_panel
+{
+	grid-area:Top_panel;
+	height:200px;
+	width:1520px;
+}
+#left_panel
+{
+	grid-area:left_panel;
+	background-color:#16161d;
+	height:775px;
+	width:250px;
+}
+#right_panel
+{
+	width:635px;
+	height:775px;
+	grid-area:right_panel;
+	background-color:;
+}
+#bottom_panel
+{
+	grid-area:bottom_panel;
+	background-color:green;
+	width:1520px;
+	height:190px;
+}
+.prof_nav a 
+{
+  padding-top:20px;
+  padding-left:43px;
+  padding-bottom:20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+.prof_nav a:hover {
+  color: #fc034e;
+}
+#hello
+{
+	padding-left:44px;
+	padding-bottom:40px;
+	padding-top:50px;
+	color:white;
+	font-size:20;
+}
+
+#delete
+{
+	margin-left:22px;
+	padding:20px;
+	color:white;
+	background-color:#16161d;
+	
+	border:0px;
+	border-radius: 10px;
+	
+	font-size: 20px;
+	text-align:center;
+}
+#delete:active
+{
+	background-color: #293336;
+    transform: translateY(1px);
+}
+#delete:hover
+{
+	color: #fc034e;
+}
+#form{
+    width:700px;
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	margin-left:400px;
+	margin-bottom:40px;
+	margin-top:40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/*-------------------------------*/
+
+h2{
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+input  {
+	background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 10px 0;
+	width: 100%;
+}
+
+select{
+    background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 15px 0;
+	width: 100%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  /* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: black;
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+textarea{
+    background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 10px 0;
+	width: 100%;
+}
+.reset_btn{
+    border-radius: 20px;
+	border: 1px solid black;
+	background-color: black;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.reset_btn:active {
+	transform: scale(0.95);
+}
+
+.reset_btn:focus {
+	outline: none;
+}
+
+.reset_btn.ghost {
+	background-color: transparent;
+	border-color: #ffffff;
+}
+
+input  {
+	background-color: #eee;
+	border: none;
+	padding: 15px 20px;
+	margin: 10px 0;
+	width: 100%;
+}

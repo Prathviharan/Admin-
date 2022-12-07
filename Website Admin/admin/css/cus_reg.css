@@ -1,0 +1,47 @@
+ *
+{
+	margin:0;
+	padding:0;
+}
+#main_panel
+{
+	display:grid;
+	grid-template-areas:
+	"Top_panel"
+	"left_panel"
+	"bottom_panel";
+	 grid-template-columns:700px;
+}
+#top_panel
+{
+	grid-area:Top_panel;
+	height:200px;
+	width:1520px;
+}
+#left_panel
+{
+	grid-area:left_panel;
+	background-color:;
+	height:1005px;
+	width:700px;
+	margin-left:400px;
+	margin-bottom:50px;
+	margin-top:50px;
+	
+	border:2px solid black;
+}
+#bottom_panel
+{
+	grid-area:bottom_panel;
+	background-color:green;
+	width:1520px;
+	height:190px;
+}
+
+/*-------------------------------*/
+
+#main_panel label
+{
+	font-size:20px;
+	font-style:underline;
+}
